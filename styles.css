@@ -1,0 +1,231 @@
+html {
+  font-family: Lato, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #d3e0e6;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* icons */
+.fa-door-open {
+  font-size: xx-large;
+  color: #5c896c;
+  padding: 5px;
+  border-radius: 10%;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.fa-door-open:hover {
+  background-color: #d3e0e6;
+}
+
+.fa-calendar {
+  font-size: xx-large;
+  color: #9e292b;
+  padding: 5px;
+  border-radius: 10%;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.fa-calendar:hover {
+  background-color: #d3e0e6;
+}
+
+.fa-user-group {
+  font-size: xx-large;
+  color: #d3e0e6;
+  padding: 5px;
+  border-radius: 10%;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.fa-user-group:hover {
+  background-color: #d3e0e6;
+  color: #201307;
+}
+
+/* main-content starts here */
+.main-content {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "nav-bar nav-bar nav-bar"
+    "content1 content1 content-side"
+    "content1 content1 content-side"
+    "content2 content3 content-side";
+  grid-template-columns: 1fr 1fr 1.25fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1.25fr;
+  gap: 1px;
+  margin-bottom: 1px;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  background-color: #201307;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-list li {
+  padding: 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list p {
+  margin: 0;
+  color: #d3e0e6;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.content1 {
+  grid-area: content1;
+  background-color: #201307;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.content1 p {
+  font-size: 6rem;
+  color: #d3e0e6;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.content1 span {
+  text-transform: lowercase;
+}
+
+.content2 {
+  grid-area: content2;
+  background-color: #201307;
+}
+
+.content3 {
+  grid-area: content3;
+  background-color: #201307;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.content3 p {
+  color: #d3e0e6;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.content-side {
+  grid-area: content-side;
+  background-color: #201307;
+}
+
+/* sub-content starts here */
+.sub-content {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "sub-content1 sub-content-mid sub-content-mid sub-content3"
+    "sub-content1 sub-content-mid sub-content-mid sub-content3"
+    "sub-content2 sub-content-mid sub-content-mid sub-content4"
+    "sub-content2 sub-content-mid sub-content-mid sub-content4";
+  grid-template-columns: 1fr 0.5fr 0.5fr 1.25fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.sub-content1 {
+  grid-area: sub-content1;
+  background-color: #201307;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.sub-content1 p {
+  color: #d3e0e6;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.sub-content2 {
+  grid-area: sub-content2;
+  background-color: lightsalmon;
+}
+
+.sub-content-mid {
+  grid-area: sub-content-mid;
+  background-color: #201307;
+}
+
+.sub-content3 {
+  grid-area: sub-content3;
+  background-color: #201307;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.sub-content3 p {
+  color: #d3e0e6;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
+
+.sub-content4 {
+  grid-area: sub-content4;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  background-color: #201307;
+  margin-top: 1px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #d3e0e6;
+  text-align: center;
+  text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+}
