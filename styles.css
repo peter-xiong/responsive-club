@@ -3,6 +3,7 @@
   --fs-lrg: clamp(1rem, 1.5vw + 0.25rem, 1.5rem);
   --fs-xlg: clamp(1.75rem, 2vw + 0.5rem, 2rem);
   --fs-xxl: clamp(2.25rem, 4vw + 1rem, 3.5rem);
+  --fs-xxxl: clamp(4rem, 6vw + 1rem, 6rem);
 }
 
 /* 
@@ -148,11 +149,12 @@ img {
 }
 
 .content1 p {
-  font-size: var(--fs-xxl);
+  font-size: var(--fs-xxxl);
   color: #d3e0e6;
   margin: 0;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #d3e0e6, 0 0 1em #5c896c, 0 0 0.2em #5c896c;
+  padding: 0 10%;
 }
 
 .content1 span {
